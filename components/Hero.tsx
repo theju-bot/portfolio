@@ -15,7 +15,7 @@ export function Hero() {
             Developer
           </h1>
 
-          <p className='animate-fade-up delay-3 text-lg max-w-xl md:text-xl'>
+          <p className='animate-fade-up delay-3 text-lg max-w-xl md:text-xl text-muted'>
             I build production-ready web apps with Next.js, React, Node.js, and
             MongoDB. Self-taught, shipping real products.
           </p>

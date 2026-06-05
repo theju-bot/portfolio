@@ -3,9 +3,9 @@ import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "600"],
-  variable: "--font-sans",
+  subsets: ['latin'],
+  weight: ['300', '400', '600'],
+  variable: '--font-sans',
 })
 
 const dmMono = DM_Mono({
@@ -30,7 +30,9 @@ export default function RootLayout({
       lang='en'
       className={`${cormorant.variable} ${dmMono.variable} h-full antialiased`}
     >
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='min-h-full flex flex-col'>
+        {children}
+      </body>
     </html>
   )
 }
