@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
+import { Syne, DM_Mono } from 'next/font/google'
 import './globals.css'
 
-const cormorant = Cormorant_Garamond({
+const syne = Syne({
   subsets: ['latin'],
-  weight: ['300', '400', '600'],
+  weight: ['400', '600', '700', '800'],
   variable: '--font-sans',
 })
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${cormorant.variable} ${dmMono.variable} h-full antialiased`}
+      className={`${syne.variable} ${dmMono.variable} h-full antialiased`}
     >
       <body className='min-h-full flex flex-col'>
         {children}

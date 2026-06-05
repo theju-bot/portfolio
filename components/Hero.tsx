@@ -1,4 +1,6 @@
-export function Hero() {
+import Image from 'next/image'
+
+export default function Hero() {
   return (
     <section className='min-h-screen flex items-center'>
       <div className='flex flex-col md:flex-row items-center justify-between w-full gap-12 px-10'>
@@ -22,10 +24,12 @@ export function Hero() {
         </div>
 
         <div className='flex-1'>
-          <img
-            src='./theju.png'
+          <Image
+            src='/theju.webp'
             alt='Theju'
-            className='w-64 h-64 md:w-80 md:h-80 rounded-full object-cover'
+            width={320}
+            height={320}
+            className='w-64 h-64 md:w-80 md:h-80 rounded-full object-cover animate-fade-up delay-2'
           />
         </div>
       </div>
