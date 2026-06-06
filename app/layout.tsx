@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Theju Portfolio',
     images: [
       {
-        url: '/og/og.png',
+        url: '/og/og.webp',
         width: 1200,
         height: 630,
         alt: 'Theju | Full Stack Developer',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: 'Theju | Full Stack Developer',
     description:
       'Self-taught full stack developer from Sri Lanka. Building production-ready web apps with Next.js, React, Node.js, Express.js, and MongoDB.',
-    images: ['/og/og.png'],
+    images: ['/og/og.webp'],
   },
 }
 
