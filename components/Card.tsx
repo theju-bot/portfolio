@@ -11,39 +11,37 @@ export default function Card({
   cardTitle: string
   description: string
   imgSrc: string
-  gitLink: string
+  gitLink?: string
   demoLink?: string
 }) {
   return (
-    <div className='flex flex-col rounded-2xl overflow-hidden border border-border bg-surface w-72 hover:border-border-hover'>
-      
+    <div className='flex flex-col rounded-2xl overflow-hidden border border-border bg-surface hover:border-border-hover'>
       <div className='w-full h-44 relative'>
         <Image
           src={imgSrc}
           alt={cardTitle}
           fill
+          sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
           className='object-cover'
         />
       </div>
 
       <div className='flex flex-col gap-3 p-5 flex-1'>
-        <h3 className='font-bold text-lg text-text'>
-          {cardTitle}
-        </h3>
-        <p className='text-sm text-muted line-clamp-3 leading-relaxed'>
-          {description}
-        </p>
+        <h3 className='font-bold text-lg text-text'>{cardTitle}</h3>
+        <p className='text-sm text-muted leading-relaxed'>{description}</p>
       </div>
 
       <div className='flex gap-2 px-5 pb-5'>
-        <Link
-          href={gitLink}
-          target='_blank'
-          className='flex-1 text-center text-sm font-mono py-2 rounded-lg border border-border text-text hover:border-accent hover:text-accent transition-all duration-200'
-        >
-          Git Repo
-        </Link>
-        
+        {gitLink && (
+          <Link
+            href={gitLink}
+            target='_blank'
+            className='flex-1 text-center text-sm font-mono py-2 rounded-lg border border-border text-text hover:border-accent hover:text-accent transition-all duration-200'
+          >
+            Git Repo
+          </Link>
+        )}
+
         {demoLink && (
           <Link
             href={demoLink}
@@ -54,7 +52,6 @@ export default function Card({
           </Link>
         )}
       </div>
-
     </div>
   )
 }

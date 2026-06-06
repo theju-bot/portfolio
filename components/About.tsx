@@ -6,7 +6,7 @@ export default function About() {
   const { ref, inView } = useInView()
 
   return (
-    <section className='min-h-screen flex items-center px-10 lg:px-24 py-24'>
+    <section id='about' className='min-h-screen flex items-center px-10 lg:px-24 py-24'>
       <div
         ref={ref}
         className={`w-full transition-all duration-1000 ${
