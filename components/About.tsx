@@ -17,7 +17,7 @@ export default function About() {
           Let Me <span className='text-accent'>Introduce</span> Myself
         </h2>
 
-        <div className='max-w-3xl mx-auto flex flex-col gap-6 font-mono text-lg leading-relaxed'>
+        <div className='max-w-3xl mx-auto flex flex-col gap-6 font-mono text-md md:text-lg leading-relaxed'>
           <p>
             I'm <span className='text-accent italic'>Theju</span> — a
             self-taught full stack developer from Sri Lanka.

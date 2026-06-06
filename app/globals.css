@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c5cbf;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
+
 @theme {
   --font-sans: 'Syne', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -12,6 +29,8 @@
   --color-muted: #6b6b6b;
   --color-accent: #c9a84c;
   --color-accent-dim: #a8863a;
+  --color-purple: #7c5cbf;
+  --color-purple-dim: #5e4491;
 }
 
 html {
