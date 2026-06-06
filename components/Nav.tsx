@@ -15,7 +15,7 @@ export default function Nav() {
           href='/'
           className='font-mono text-sm font-bold text-accent hover:text-accent-dim transition-colors duration-200'
         >
-          TJ
+          TJ.
         </Link>
 
         <div className='hidden md:flex items-center gap-8'>

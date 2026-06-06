@@ -17,7 +17,45 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: 'Theju | Full Stack Developer',
   description:
-    'Theju is a full stack developer with experience in building web applications using modern technologies.',
+    'Self-taught full stack developer from Sri Lanka. Building production-ready web apps with Next.js, React, Node.js, Express.js, and MongoDB.',
+  icons: {
+    icon: '/favicon/favicon.ico',
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  keywords: [
+    'Full Stack Developer',
+    'Next.js',
+    'React',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Remote Developer',
+    'Sri Lanka',
+  ],
+  authors: [{ name: 'Theju', url: 'https://github.com/theju-bot' }],
+  openGraph: {
+    title: 'Theju | Full Stack Developer',
+    description:
+      'Self-taught full stack developer from Sri Lanka. Building production-ready web apps with Next.js, React, Node.js, Express.js, and MongoDB.',
+    url: 'https://portfolio-tawny-delta-z8wf8ckdu4.vercel.app/',
+    siteName: 'Theju Portfolio',
+    images: [
+      {
+        url: '/og/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Theju | Full Stack Developer',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Theju | Full Stack Developer',
+    description:
+      'Self-taught full stack developer from Sri Lanka. Building production-ready web apps with Next.js, React, Node.js, Express.js, and MongoDB.',
+    images: ['/og/og.png'],
+  },
 }
 
 export default function RootLayout({
@@ -30,9 +68,7 @@ export default function RootLayout({
       lang='en'
       className={`${syne.variable} ${dmMono.variable} h-full antialiased`}
     >
-      <body className='min-h-full flex flex-col'>
-        {children}
-      </body>
+      <body className='min-h-full flex flex-col'>{children}</body>
     </html>
   )
 }

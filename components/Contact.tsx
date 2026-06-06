@@ -32,7 +32,7 @@ export default function Contact() {
   return (
     <section
       id='contact'
-      className='min-h-screen flex flex-col items-center justify-between px-10 lg:px-24 py-24 pt-50'
+      className='min-h-screen flex flex-col items-center justify-between px-10 lg:px-24 py-24 pt-30'
     >
       <div
         ref={ref}
