@@ -63,7 +63,7 @@ export default function Skills() {
   const { ref, inView } = useInView()
 
   return (
-    <section id='skills' className='min-h-screen flex items-center px-10 lg:px-24 py-24'>
+    <section id='skills' className='min-h-screen lg:w-1/2 flex items-center mx-auto px-10 lg:px-24 py-24'>
       <div
         ref={ref}
         className={`w-full transition-all duration-1000 ${
@@ -86,7 +86,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <h2 className='text-4xl md:text-5xl font-bold text-center mb-16'>
+        <h2 className='text-4xl md:text-5xl font-bold text-center mb-16 lg:px-30'>
           Tools <span className='text-accent'>I Use</span>
         </h2>
 
