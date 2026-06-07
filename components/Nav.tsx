@@ -5,28 +5,33 @@ import { useState } from 'react'
 
 const LINKS = ['About', 'Projects', 'Skills', 'Contact']
 
+function scrollToSection(id: string) {
+  const el = document.getElementById(id.toLowerCase())
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
     <nav className='fixed top-0 left-0 right-0 z-50 px-10 lg:px-50 bg-bg/50 backdrop-blur-lg'>
       <div className='flex items-center justify-between py-6'>
-        <Link
-          href='/'
-          className='font-mono text-sm font-bold text-accent hover:text-accent-dim transition-colors duration-200'
+        <button
+          className='font-mono text-sm font-bold text-accent hover:text-accent-dim transition-colors duration-200 cursor-pointer'
+          onClick={() => scrollToSection('hero')}
         >
           TJ.
-        </Link>
+        </button>
 
         <div className='hidden md:flex items-center gap-8'>
           {LINKS.map((link) => (
-            <Link
+            <button
               key={link}
-              href={`#${link.toLowerCase()}`}
-              className='font-mono text-xs text-muted hover:text-text transition-colors duration-200'
+              onClick={() => scrollToSection(link)}
+              className='font-mono text-xs text-muted hover:text-text transition-colors duration-200 cursor-pointer'
             >
               {link}
-            </Link>
+            </button>
           ))}
         </div>
 
@@ -55,14 +60,16 @@ export default function Nav() {
         }`}
       >
         {LINKS.map((link) => (
-          <Link
+          <button
             key={link}
-            href={`#${link.toLowerCase()}`}
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              setOpen(false)
+              scrollToSection(link)
+            }}
             className='font-mono text-sm text-muted hover:text-text transition-colors duration-200'
           >
             {link}
-          </Link>
+          </button>
         ))}
       </div>
     </nav>
