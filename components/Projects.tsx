@@ -29,12 +29,11 @@ const CARD_DATA = [
     demoLink: 'https://web-anlytcs-tool.vercel.app',
   },
   {
-    cardTitle: 'Coming soon...',
+    cardTitle: 'Noteflow',
     description:
-      'A Frontend Heavy Project built with Next.js, Tailwind CSS, and TypeScript. Stay tuned for the reveal!',
+      'A real-time collaborative notes app built with React, Node.js, Socket.io, and Yjs. Multiple users can edit the same document simultaneously with live cursors and instant sync.',
     imgSrc: '/projects/coming-soon.webp',
-    gitLink:
-      '',
+    gitLink: '',
     demoLink: '',
   },
 ]
@@ -43,7 +42,10 @@ export default function Projects() {
   const { ref, inView } = useInView()
 
   return (
-    <section id='projects' className='min-h-screen flex items-center px-10 lg:px-24 py-24'>
+    <section
+      id='projects'
+      className='min-h-screen flex items-center px-10 lg:px-24 py-24'
+    >
       <div
         ref={ref}
         className={`w-full transition-all duration-1000 ${
