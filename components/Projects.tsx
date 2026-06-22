@@ -32,9 +32,9 @@ const CARD_DATA = [
     cardTitle: 'Noteflow',
     description:
       'A real-time collaborative notes app built with React, Node.js, Socket.io, and Yjs. Multiple users can edit the same document simultaneously with live cursors and instant sync.',
-    imgSrc: '/projects/coming-soon.webp',
-    gitLink: '',
-    demoLink: '',
+    imgSrc: '/projects/noteflow.webp',
+    gitLink: 'https://github.com/theju-bot/Projects/tree/main/real-time-collaborative-notes',
+    demoLink: 'https://noteflow.theju.dev',
   },
 ]
 
