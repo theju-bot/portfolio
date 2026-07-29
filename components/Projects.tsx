@@ -7,7 +7,7 @@ const CARD_DATA = [
   {
     cardTitle: 'Roadmap.sh Projects',
     description:
-      'Collection of 33+ frontend and backend projects built while learning through roadmap.sh. Consistent commits throughout the journey — from basic HTML/CSS to full stack Node.js and React applications.',
+      'Collection of 33+ frontend and backend exercises built while learning through roadmap.sh. Consistent commits throughout the journey — from basic HTML/CSS to full stack Node.js and React applications.',
     imgSrc: '/projects/roadmap.webp',
     gitLink: 'https://github.com/theju-bot',
   },
