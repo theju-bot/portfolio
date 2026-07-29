@@ -13,32 +13,32 @@ export default function About() {
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <h2 className='text-4xl md:text-5xl font-bold text-center mb-16 font-mono uppercase tracking-widest'>
+        <h2 className='font-heading text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wider'>
           Let Me <span className='text-accent'>Introduce</span> Myself
         </h2>
 
-        <div className='max-w-3xl mx-auto flex flex-col gap-6 font-mono text-md md:text-lg leading-relaxed'>
+        <div className='max-w-3xl mx-auto flex flex-col gap-6 font-sans text-md md:text-lg leading-relaxed text-text/90'>
           <p>
-            I'm <span className='text-accent italic'>Theju</span> — a
+            I'm <span className='text-accent font-semibold'>Theju</span> — a
             self-taught full stack developer from Sri Lanka.
           </p>
           <p>
             I build and ship production-ready web apps using{' '}
-            <span className='text-accent italic'>
+            <span className='text-accent font-semibold'>
               React, Next.js, Node.js, Express.js, and MongoDB
             </span>{' '}
             — working across both frontend and backend stacks.
           </p>
           <p>
             My key areas include building{' '}
-            <span className='text-accent italic'>
+            <span className='text-accent font-semibold'>
               full stack web applications, integrating AI features,
             </span>{' '}
             and designing systems that scale.
           </p>
           <p>
             No bootcamp, no degree. Just consistent work, real projects, and a{' '}
-            <span className='text-accent italic'>GitHub history</span> that
+            <span className='text-accent font-semibold'>GitHub history</span> that
             shows it. I'm looking for remote developer roles where I can
             contribute from day one.
           </p>

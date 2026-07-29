@@ -52,7 +52,7 @@ export default function Projects() {
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         } grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full lg:w-4/5 mx-auto`}
       >
-        {CARD_DATA.map((card, i) => (
+        {CARD_DATA.map((card) => (
           <Card
             key={card.cardTitle}
             cardTitle={card.cardTitle}

@@ -27,8 +27,8 @@ export default function Card({
       </div>
 
       <div className='flex flex-col gap-3 p-5 flex-1'>
-        <h3 className='font-bold text-lg text-text'>{cardTitle}</h3>
-        <p className='text-sm text-muted leading-relaxed'>{description}</p>
+        <h3 className='font-heading font-bold text-xl text-text tracking-tight'>{cardTitle}</h3>
+        <p className='font-sans text-sm text-muted leading-relaxed'>{description}</p>
       </div>
 
       <div className='flex gap-2 px-5 pb-5'>
@@ -36,7 +36,7 @@ export default function Card({
           <Link
             href={gitLink}
             target='_blank'
-            className='flex-1 text-center text-sm font-mono py-2 rounded-lg border border-border text-text hover:border-accent hover:text-accent transition-all duration-200'
+            className='flex-1 text-center text-xs font-mono font-medium py-2 rounded-lg border border-border text-text hover:border-accent hover:text-accent transition-all duration-200'
           >
             Git Repo
           </Link>
@@ -46,7 +46,7 @@ export default function Card({
           <Link
             href={demoLink}
             target='_blank'
-            className='flex-1 text-center text-sm font-mono py-2 rounded-lg bg-accent text-bg font-bold hover:bg-accent-dim transition-all duration-200'
+            className='flex-1 text-center text-xs font-mono font-bold py-2 rounded-lg bg-accent text-bg hover:bg-accent-dim transition-all duration-200'
           >
             Live Demo
           </Link>

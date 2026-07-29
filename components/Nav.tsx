@@ -16,7 +16,7 @@ export default function Nav() {
     <nav className='fixed top-0 left-0 right-0 z-50 px-10 lg:px-50 bg-bg/50 backdrop-blur-lg'>
       <div className='flex items-center justify-between py-6'>
         <button
-          className='font-mono text-sm font-bold text-accent hover:text-accent-dim transition-colors duration-200 cursor-pointer'
+          className='font-heading text-lg font-extrabold text-accent hover:text-accent-dim transition-colors duration-200 tracking-wider cursor-pointer'
           onClick={() => scrollToSection('hero')}
         >
           TJ.
@@ -27,7 +27,7 @@ export default function Nav() {
             <button
               key={link}
               onClick={() => scrollToSection(link)}
-              className='font-mono text-xs text-muted hover:text-text transition-colors duration-200 cursor-pointer'
+              className='font-mono text-xs tracking-wider text-muted hover:text-text transition-colors duration-200 cursor-pointer'
             >
               {link}
             </button>

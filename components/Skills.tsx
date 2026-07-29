@@ -70,7 +70,7 @@ export default function Skills() {
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <h2 className='text-4xl md:text-5xl font-bold text-center mb-16'>
+        <h2 className='font-heading text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight uppercase'>
           Professional <span className='text-accent'>Skillset</span>
         </h2>
 
@@ -81,12 +81,12 @@ export default function Skills() {
               className='flex items-center gap-2 px-5 py-3 rounded-full border border-border bg-surface hover:border-accent transition-all duration-200 cursor-default'
             >
               <Icon size={18} color={color} />
-              <span className='font-mono text-sm text-text'>{name}</span>
+              <span className='font-sans text-sm font-medium text-text'>{name}</span>
             </div>
           ))}
         </div>
 
-        <h2 className='text-4xl md:text-5xl font-bold text-center mb-16 lg:px-30'>
+        <h2 className='font-heading text-4xl md:text-5xl font-bold text-center mb-16 lg:px-30 tracking-tight uppercase'>
           Tools <span className='text-accent'>I Use</span>
         </h2>
 
@@ -97,7 +97,7 @@ export default function Skills() {
               className='flex items-center gap-2 px-5 py-3 rounded-full border border-border bg-surface hover:border-accent transition-all duration-200 cursor-default'
             >
               <Icon size={18} color={color} />
-              <span className='font-mono text-sm text-text'>{name}</span>
+              <span className='font-sans text-sm font-medium text-text'>{name}</span>
             </div>
           ))}
         </div>

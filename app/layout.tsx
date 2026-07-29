@@ -1,17 +1,26 @@
 import type { Metadata } from 'next'
-import { Syne, DM_Mono } from 'next/font/google'
+import { Plus_Jakarta_Sans, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-const syne = Syne({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
+  display: 'swap',
 })
 
-const dmMono = DM_Mono({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['500', '600', '700'],
+  variable: '--font-heading',
+  display: 'swap',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
   variable: '--font-mono',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -66,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${syne.variable} ${dmMono.variable} h-full antialiased`}
+      className={`${plusJakartaSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className='min-h-full flex flex-col'>{children}</body>
     </html>

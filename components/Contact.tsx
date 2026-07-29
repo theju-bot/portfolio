@@ -40,24 +40,24 @@ export default function Contact() {
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
-        <h2 className='text-4xl md:text-5xl font-bold mb-6 text-center'>
+        <h2 className='font-heading text-4xl md:text-5xl font-bold mb-6 text-center tracking-tight uppercase'>
           Let&apos;s <span className='text-accent'>Work Together</span>
         </h2>
-        <p className='text-muted font-mono text-sm mb-16 text-center'>
+        <p className='text-muted font-sans text-base mb-16 text-center'>
           Open to remote junior/mid developer roles and freelance projects.
         </p>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col border-y border-border divide-y divide-border'>
           {LINKS.map(({ label, href, icon: Icon, value }) => (
             <Link
               key={label}
               href={href}
               target='_blank'
-              className='group flex items-center justify-between py-6 border-t border-border hover:border-accent transition-all duration-200'
+              className='group flex items-center justify-between py-6 hover:border-accent transition-all duration-200'
             >
               <div className='flex items-center gap-4'>
                 <Icon size={20} className='text-accent' />
-                <span className='font-bold text-text group-hover:text-accent transition-colors duration-200'>
+                <span className='font-sans font-bold text-text group-hover:text-accent transition-colors duration-200'>
                   {label}
                 </span>
               </div>
@@ -66,7 +66,6 @@ export default function Contact() {
               </span>
             </Link>
           ))}
-          <div className='border-t border-border' />
         </div>
       </div>
 
