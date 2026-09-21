@@ -5,6 +5,13 @@ import Card from './Card'
 
 const CARD_DATA = [
   {
+    cardTitle: 'Metro Food City',
+    description:
+      'Full-stack supermarket catalogue platform built with Next.js, TypeScript, MongoDB, and Cloudinary. Features an admin dashboard for managing products, categories, brands, offers, and store settings, with automated POS data synchronization.',
+    imgSrc: '/projects/metro-food-city.webp',
+    demoLink: 'https://metrofoodcity.theju.dev/',
+  },
+  {
     cardTitle: 'Roadmap.sh Projects',
     description:
       'Collection of 33+ frontend and backend exercises built while learning through roadmap.sh. Consistent commits throughout the journey — from basic HTML/CSS to full stack Node.js and React applications.',
@@ -33,7 +40,8 @@ const CARD_DATA = [
     description:
       'A real-time collaborative notes app built with React, Node.js, Socket.io, and Yjs. Multiple users can edit the same document simultaneously with live cursors and instant sync.',
     imgSrc: '/projects/noteflow.webp',
-    gitLink: 'https://github.com/theju-bot/Projects/tree/main/real-time-collaborative-notes',
+    gitLink:
+      'https://github.com/theju-bot/Projects/tree/main/real-time-collaborative-notes',
     demoLink: 'https://noteflow.theju.dev',
   },
 ]
